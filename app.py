@@ -19,7 +19,7 @@ st.set_page_config(page_title="Lending Club", page_icon="🤖", layout="wide")
 
 # spinner bar
 
-with st.spinner('Wait for it...'):
+with st.spinner('Report is being generated! This will not take more than few seconds...'):
      time.sleep(5)
 st.success('Done!')
 
