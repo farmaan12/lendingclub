@@ -79,7 +79,7 @@ st.balloons()
 #loading data
 
 st.subheader('Preview of dataset which is cleaned and processed:')
-df = pd.read_csv('https://github.com/farmaan12/lendingclub/blob/main/pre_processed_data.csv', low_memory=False)
+df = pd.read_csv('https://github.com/farmaan12/lendingclub/blob/main/pre_processed_data.csv', error_bad_lines=False)
 st.write(df)  # visualize my dataframe in the Streamlit app
 
 
