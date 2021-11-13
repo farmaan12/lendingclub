@@ -101,16 +101,16 @@ components.html(source_code,height=1000,scrolling=True)
 # displaying html page from local computer
 # Pandas profiling EDA
 
-st.text("")
-st.text("")
-st.text("")
-st.header("Data viusualization using Pandas Profiling to understand data in more better way with alerts")
-st.text("")
-st.text("")
-HtmlFile1 = open("C:/Users/mdhas/Loan_Report.html", 'r', encoding='utf-8')
-source_code1 = HtmlFile1.read() 
-print(source_code1)
-components.html(source_code1,height=1000,scrolling=True)
+# st.text("")
+# st.text("")
+# st.text("")
+# st.header("Data viusualization using Pandas Profiling to understand data in more better way with alerts")
+# st.text("")
+# st.text("")
+# HtmlFile1 = open("C:/Users/mdhas/Loan_Report.html", 'r', encoding='utf-8')
+# source_code1 = HtmlFile1.read() 
+# print(source_code1)
+# components.html(source_code1,height=1000,scrolling=True)
 
 # comments 
 
