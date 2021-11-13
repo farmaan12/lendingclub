@@ -79,7 +79,7 @@ st.balloons()
 #loading data
 
 st.subheader('Preview of dataset which is cleaned and processed:')
-df = pd.read_csv('https://github.com/farmaan12/lendingclub/blob/main/pre_processed_data.csv', error_bad_lines=False)
+df = pd.read_csv("https://github.com/farmaan12/lendingclub/blob/main/pre_processed_data.csv", error_bad_lines=False)
 st.write(df)  # visualize my dataframe in the Streamlit app
 
 
@@ -92,7 +92,7 @@ st.text("")
 st.header("Data viusualization using SweetViz to understand how the file data is distributed")
 st.text("")
 st.text("")
-HtmlFile = open("C:/Users/mdhas/Report.html", 'r', encoding='utf-8')
+HtmlFile = open("https://github.com/farmaan12/lendingclub/blob/main/Report.html", 'r', encoding='utf-8')
 source_code = HtmlFile.read() 
 print(source_code)
 components.html(source_code,height=1000,scrolling=True)
