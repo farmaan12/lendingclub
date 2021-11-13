@@ -79,7 +79,7 @@ st.balloons()
 #loading data
 
 st.subheader('Preview of dataset which is cleaned and processed:')
-df = pd.read_csv('C:/Users/mdhas/Anaconda3/envs/eda/pre_processed_data.csv')
+df = pd.read_csv('https://github.com/farmaan12/lendingclub/blob/main/pre_processed_data.csv')
 st.write(df)  # visualize my dataframe in the Streamlit app
 
 
