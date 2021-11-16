@@ -123,13 +123,14 @@ st.text("")
 
 - After checking the datasets and performing eda with two famous libraries we were able to understand that this dataset had almost 49% columns with null values which is not beneficial further, hence these columns were removed for further analysis.
 - We also have to take csre of the null columns in future and fill them accordingly as per business purposes to see if we can drive more insights out of the data which is null at the moment.
-- Below we can see a visual representation to see how the data is filled woith null values.
+- Below we can see a visual representation to see how the data is filled with null values.
 """
 
 
 
 # heatmap which shows null values in our dataset.
 
+st.text("")
 st.text("")
 st.text("")
 st.text("")
@@ -162,6 +163,9 @@ st.text("")
 st.text("")
 sales_title = '<p style="font-family:Courier; font-weight: bold; color:Teal; font-size: 40px;">Sales Analysis</p>'
 st.markdown(sales_title, unsafe_allow_html=True)
+st.text("")
+st.text("")
+
 
 # summary for sales analysis
 
@@ -235,6 +239,8 @@ st.text("")
 st.text("")
 credit_title = '<p style="font-family:Courier; font-weight: bold; color:Teal; font-size: 40px;">Credit and Risk Analysis</p>'
 st.markdown(credit_title, unsafe_allow_html=True)
+st.text("")
+st.text("")
 
 '''
 **_A Deeper Look into Bad Loans:_**
@@ -338,6 +344,15 @@ st.subheader("**_Employment Experience in total years_**")
 barplot44 = Image.open("exp-emp.png")
 st.image(barplot44, width=1500)
 
+
+"""
+**_Important Information to increase revenue with the help of data:_**
+
+- Company have to collect the data from website which provides information stating engagement time of the customer which will help us to understand what is the best time to contact guest to drive a sale and revenue to the company.
+- We have to fill null values with some meaningful information so we can analyse and gain more insights out of the data.
+- Website traffic data can help us reach out to potential employee who requires a loan and increase in our sales and revenue.
+- There are many other factors which can be driven from the data to make more helpful decisions in future.
+'''
 
 
 # footer
