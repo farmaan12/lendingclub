@@ -218,9 +218,10 @@ st.text("")
 """
 **_The top 3 purposes are:_**
 
-- 56.5% of the Loans are to Debt Consolidation.4
+- 56.5% of the Loans are to Debt Consolidation.
 - 22.87% are to pay Credit Card.
 - 6.67% are to buy a Home.
+- Thus we can conclude that the person who applies for such purposes on the website is more likely to drive revenue for the organization in terms of sales.
 """
 
 
@@ -279,15 +280,6 @@ map = Image.open("map.png")
 st.image(map, width=1500)
 
 
-"""
-**_Important Information:_**
-
-- The regions of the West and SouthEast had a higher percentage in most of the BAD loan statuses.
-- Based on this small and brief summary we can conclude that the West and SouthEast regions have the most undesirable loan status, but just by a slightly higher percentage compared to the NorthEast region.
-- Again, this does not tell us what causes a loan to be a bad loan , but it gives us some idea about the level of risk within the regions across the United States.
-"""
-
-
 # Loan typed based on group and sub groups
 
 
@@ -297,6 +289,14 @@ st.text("")
 st.subheader("**_Type of loans by grade and subgrade_**")
 barplot2 = Image.open("barplot2.png")
 st.image(barplot2, width=1000)
+
+"""
+**_Important Information:_**
+
+- The regions of the West and SouthEast had a higher percentage in most of the BAD loan statuses.
+- Based on this small and brief summary we can conclude that the West and SouthEast regions have the most undesirable loan status, but just by a slightly higher percentage compared to the NorthEast region.
+- Again, this does not tell us what causes a loan to be a bad loan , but it gives us some idea about the level of risk within the regions across the United States.
+"""
 
 
 
@@ -312,7 +312,7 @@ st.markdown(ops_title, unsafe_allow_html=True)
 st.text("")
 
 '''
-**_Summary:**_
+**_Summary:_**
 
 - Below visualization will help the operational team to understand which audience has to be targeted in order to increase revenue.
 - We can see that there are approximately 45% unverified customers. We can verify their source of income which in turn will be helpful for future business purposes.
@@ -327,7 +327,7 @@ st.text("")
 st.text("")
 st.subheader("**_Loan verification status types distribution to see_**")
 barplot33 = Image.open("barplot33.png")
-st.image(barplot33, width=1500)
+st.image(barplot33, width=1000)
 
 # top experience employees
 
