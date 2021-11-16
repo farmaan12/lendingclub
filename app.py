@@ -117,11 +117,15 @@ components.html(source_code,height=1000,scrolling=True)
 st.text("")
 st.text("")
 st.text("")
-st.subheader("**_Important Information:_**")
 st.text("")
-st.text("- After checking the datasets and performing eda with two famous libraries we were able to understand that this dataset had almost 49% columns with null values which is not beneficial further, hence these columns were removed for further analysis.")
-st.text("- We also have to take csre of the null columns in future and fill them accordingly as per business purposes to see if we can drive more insights out of the data which is null at the moment")
-st.text("- Below we can see a visual representation to see how the data is filled woith null values")
+"""
+**_Important Information:_**
+
+- After checking the datasets and performing eda with two famous libraries we were able to understand that this dataset had almost 49% columns with null values which is not beneficial further, hence these columns were removed for further analysis.
+- We also have to take csre of the null columns in future and fill them accordingly as per business purposes to see if we can drive more insights out of the data which is null at the moment.
+- Below we can see a visual representation to see how the data is filled woith null values.
+"""
+
 
 
 # heatmap which shows null values in our dataset.
@@ -148,18 +152,27 @@ st.subheader("**_NOTE:_**")
 st.text("- Since there are some columns which are highly correlated with the target variable, we decided not to remove these columns from the dataset.")
 
 # sales analysis 
+
+st.text("")
+st.text("")
+st.text("")
+st.text("")
 st.text("")
 st.text("")
 sales_title = '<p style="font-family:Courier; font-weight: bold; color:Teal; font-size: 40px;">Sales Analysis</p>'
 st.markdown(sales_title, unsafe_allow_html=True)
 
+# summary for sales analysis
+
+st.text("")
+st.text("")
+st.text("")
+st.text("")
 
 # distplot which shows amount funded is equal to loan applied by customer.
 
 st.text("")
-st.text("")
-st.text("")
-st.subheader("**_Distplot which shows amount funded is equal to loan applied by Customer-**")
+st.subheader("**_Distplot which shows amount funded is equal to loan applied by Customer_**")
 distplot = Image.open("distplot.png")
 st.image(distplot, width=1500)
 
@@ -172,9 +185,9 @@ st.subheader("**_Barplot which displays which year the most loans were issued_**
 barplot = Image.open("barplot.png")
 st.image(barplot, width=800)
 
-st.header("Information:")
+st.subheader("**_Information:_**")
 st.text("")
-st.subheader("- We can now understand that the most number of loans were issued in the year 2015 compared to all other years and the trend shows that we are increasing in business year by year with more number of Customers.")
+st.text("- We can now understand that the most number of loans were issued in the year 2015 compared to all other years and the trend shows that we are increasing in business year by year with more number of Customers.")
 
 # countplot which shows Loan status type distribution
 
@@ -196,13 +209,16 @@ st.image(countplot1, width=1500)
 
 st.text("")
 st.text("")
-st.subheader("**_The top 3 purposes are:_")
-st.text("56.5% of the Loans are to Debt Consolidation")
-st.text("22.87% are to pay Credit Card")
-st.text("6.67% are to buy a Home")
+st.subheader("**_The top 3 purposes are:_**")
+st.text("- 56.5% of the Loans are to Debt Consolidation")
+st.text("- 22.87% are to pay Credit Card")
+st.text("- 6.67% are to buy a Home")
 
 
 # credit risk analysis 
+st.text("")
+st.text("")
+st.text("")
 st.text("")
 st.text("")
 st.text("")
@@ -211,8 +227,6 @@ st.markdown(credit_title, unsafe_allow_html=True)
 
 # crosstab to display Loan status by Grade 
 
-st.text("")
-st.text("")
 st.text("")
 st.subheader("**_Crosstab to display Loan status by Grade_**")
 crosstab = Image.open("crosstab.png")
@@ -224,7 +238,7 @@ st.image(crosstab, width=1500)
 st.text("")
 st.text("")
 st.text("")
-st.subheader("**_Bar plot and Pie chart which shows percentage of good and bad loans**_")
+st.subheader("**_Bar plot and Pie chart which shows percentage of good and bad loans_**")
 piechart = Image.open("piechart.png")
 st.image(piechart, width=1500)
 
@@ -261,6 +275,9 @@ st.image(barplot2, width=1000)
 
 
 # ops team analysis 
+st.text("")
+st.text("")
+st.text("")
 st.text("")
 st.text("")
 st.text("")
