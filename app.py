@@ -11,18 +11,21 @@ import os
 import streamlit.components.v1 as components
 from PIL import Image
 import time
-from multiapp import MultiApp
-from apps import sales,credit,ops # import your app modules here
 
+# multi page import
 
+from multipage import MultiPage
+from pages import sales,credit,ops
 
 # multi page app
-app = MultiApp()
+app = MultiPage()
+
+
 
 # Add all your application here
-app.add_app("Home", home.app)
-app.add_app("Data", data.app)
-app.add_app("Model", model.app)
+app.add_page("Sales Analysis", sales.app)
+app.add_page("Credit & Risk Analysis", credit.app)
+app.add_page("Operational Analysis", ops.app)
 
 # The main app
 app.run()
