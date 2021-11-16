@@ -14,18 +14,17 @@ import time
 
 # multi page import
 
-from multipage import MultiPage
-from pages import sales,credit,ops
+from multiapp import MultiApp
+from apps import sales,credit,ops
 
 # multi page app
-app = MultiPage()
-
+app = MultiApp()
 
 
 # Add all your application here
-app.add_page("Sales Analysis", sales.app)
-app.add_page("Credit & Risk Analysis", credit.app)
-app.add_page("Operational Analysis", ops.app)
+app.add_app("Sales Analysis", sales.app)
+app.add_app("Credit & Risk Analysis", credit.app)
+app.add_app("Operational Analysis", ops.app)
 
 # The main app
 app.run()
