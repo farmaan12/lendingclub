@@ -65,7 +65,7 @@ Company Information:
 
 Lending Club is a peer to peer lending company based in the United States, in which investors provide funds for potential borrowers and investors earn a profit depending on the risk they take (the borrowers credit score). Lending Club provides the "bridge" between investors and borrowers. For more basic information about the company please check out the wikipedia article about the company.
 
-**Credit:** App built in `Python` + `Streamlit` by Mohammed Haseeb
+**Credit:** App built in `Python` + `Streamlit` by _Mohammed Haseeb_
 
 ---
 ''') 
@@ -78,7 +78,7 @@ st.balloons()
 
 #loading data
 
-st.subheader('Preview of dataset which is cleaned and processed:')
+st.subheader('General information and Preview of dataset which is cleaned and processed:')
 df = pd.read_csv("pre_processed_data.csv", low_memory=False)
 st.write(df)  # visualize my dataframe in the Streamlit app
 
@@ -117,9 +117,11 @@ components.html(source_code,height=1000,scrolling=True)
 st.text("")
 st.text("")
 st.text("")
-st.header("Important Information:")
+st.markdown("Important Information:")
 st.text("")
-st.subheader("- After checking the datasets and performing eda with two famous libraries we were able to understand that this dataset had almost 49% columns with null values which is not beneficial further, hence these columns were removed for further analysis.")
+st.text("- After checking the datasets and performing eda with two famous libraries we were able to understand that this dataset had almost 49% columns with null values which is not beneficial further, hence these columns were removed for further analysis.")
+st.text("- We also have to take csre of the null columns in future and fill them accordingly as per business purposes to see if we can drive more insights out of the data which is null at the moment")
+st.text("- Below we can see a visual representation to see how the data is filled woith null values")
 
 
 # heatmap which shows null values in our dataset.
@@ -127,7 +129,7 @@ st.subheader("- After checking the datasets and performing eda with two famous l
 st.text("")
 st.text("")
 st.text("")
-st.header("Heatmap which represents number of null columns before and after cleaning the data")
+st.markdown("Heatmap which represents number of null columns before and after cleaning the data")
 st.text("")
 heatmap = Image.open("heatmap.png")
 heatmap1 = Image.open("heatmap1.png")
