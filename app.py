@@ -148,8 +148,11 @@ st.subheader("**_Heatmap which represents co-relation in the data._**")
 heatmapcor = Image.open("heatmapcor.png")
 st.image(heatmapcor, width=1000)
 
-st.subheader("**_NOTE:_**")
-st.text("- Since there are some columns which are highly correlated with the target variable, we decided not to remove these columns from the dataset.")
+"""
+**_NOTE_**
+- Since there are some columns which are highly correlated with the target variable, we decided not to remove these columns from the dataset.
+
+"""
 
 # sales analysis 
 
@@ -164,8 +167,16 @@ st.markdown(sales_title, unsafe_allow_html=True)
 
 # summary for sales analysis
 
-st.text("")
-st.text("")
+'''
+**_Summary:_**
+
+- Most of the loans issued were in the range of 10,000 to 20,000 usd.
+- The year of 2015 was the year were most loans were issued.
+- Loans were issued in an incremental manner.
+- The loans applied by potential borrowers, the amount issued to the borrowers and the amount funded by investors are similarly distributed, meaning that it is most likely that qualified borrowers are going to get the loan they had applied for.
+'''
+
+
 st.text("")
 st.text("")
 
@@ -184,10 +195,12 @@ st.text("")
 st.subheader("**_Barplot which displays which year the most loans were issued_**")
 barplot = Image.open("barplot.png")
 st.image(barplot, width=800)
-
-st.subheader("**_Information:_**")
 st.text("")
-st.text("- We can now understand that the most number of loans were issued in the year 2015 compared to all other years and the trend shows that we are increasing in business year by year with more number of Customers.")
+
+"""
+**_Information:_**
+- We can now understand that the most number of loans were issued in the year 2015 compared to all other years and the trend shows that we are increasing in business year by year with more number of Customers.
+"""
 
 # countplot which shows Loan status type distribution
 
@@ -209,10 +222,14 @@ st.image(countplot1, width=1500)
 
 st.text("")
 st.text("")
-st.subheader("**_The top 3 purposes are:_**")
-st.text("- 56.5% of the Loans are to Debt Consolidation")
-st.text("- 22.87% are to pay Credit Card")
-st.text("- 6.67% are to buy a Home")
+"""
+**_The top 3 purposes are:_**
+
+- 56.5% of the Loans are to Debt Consolidation.4
+- 22.87% are to pay Credit Card.
+- 6.67% are to buy a Home.
+"""
+
 
 
 # credit risk analysis 
@@ -254,13 +271,14 @@ map = Image.open("map.png")
 st.image(map, width=1500)
 
 
-st.subheader("**_Important Information:_**")
-st.text("")
-st.text("- The regions of the West and SouthEast had a higher percentage in most of the BAD loan statuses.")
-st.text("- Based on this small and brief summary we can conclude that the West and SouthEast regions have the most undesirable loan status, but just by a slightly higher percentage compared to the NorthEast region.")
-st.text("- Again, this does not tell us what causes a loan to be a bad loan , but it gives us some idea about the level of risk within the regions across the United States.")
-st.text("")
-st.text("")
+"""
+**_Important Information:_**
+
+- The regions of the West and SouthEast had a higher percentage in most of the BAD loan statuses.
+- Based on this small and brief summary we can conclude that the West and SouthEast regions have the most undesirable loan status, but just by a slightly higher percentage compared to the NorthEast region.
+- Again, this does not tell us what causes a loan to be a bad loan , but it gives us some idea about the level of risk within the regions across the United States.
+"""
+
 
 # Loan typed based on group and sub groups
 
