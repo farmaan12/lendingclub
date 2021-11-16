@@ -59,9 +59,9 @@ st.markdown("""
 
 
 st.markdown('''
-# **Overview**
+# **_Overview_**
 
-**Company Information:**
+**_Company Information:_**
 
 Lending Club is a peer to peer lending company based in the United States, in which investors provide funds for potential borrowers and investors earn a profit depending on the risk they take (the borrowers credit score). Lending Club provides the "bridge" between investors and borrowers. For more basic information about the company please check out the wikipedia article about the company.
 
@@ -89,7 +89,7 @@ st.write(df)  # visualize my dataframe in the Streamlit app
 st.text("")
 st.text("")
 st.text("")
-st.header("Data viusualization using SweetViz to understand how the file data is distributed")
+st.header("**_Data viusualization using SweetViz to understand how the file data is distributed_**")
 st.text("")
 st.text("")
 HtmlFile = open("Report.html", 'r', encoding='utf-8')
@@ -117,7 +117,7 @@ components.html(source_code,height=1000,scrolling=True)
 st.text("")
 st.text("")
 st.text("")
-st.markdown("**_Important Information:_**")
+st.subheader("**_Important Information:_**")
 st.text("")
 st.text("- After checking the datasets and performing eda with two famous libraries we were able to understand that this dataset had almost 49% columns with null values which is not beneficial further, hence these columns were removed for further analysis.")
 st.text("- We also have to take csre of the null columns in future and fill them accordingly as per business purposes to see if we can drive more insights out of the data which is null at the moment")
@@ -129,8 +129,7 @@ st.text("- Below we can see a visual representation to see how the data is fille
 st.text("")
 st.text("")
 st.text("")
-st.markdown("**_Heatmap which represents number of null columns before and after cleaning the data_**")
-st.text("")
+st.subheader("**_Heatmap which represents number of null columns before and after cleaning the data_**")
 heatmap = Image.open("heatmap.png")
 heatmap1 = Image.open("heatmap1.png")
 st.image([heatmap,heatmap1])
@@ -141,17 +140,16 @@ st.image([heatmap,heatmap1])
 st.text("")
 st.text("")
 st.text("")
-st.header("**_Heatmap which represents co-relation in the data._**")
-st.text("")
+st.subheader("**_Heatmap which represents co-relation in the data._**")
 heatmapcor = Image.open("heatmapcor.png")
 st.image(heatmapcor, width=1000)
 
-st.header("**_NOTE:_**")
-st.text("")
-st.subheader("- Since there are some columns which are highly correlated with the target variable, we decided not to remove these columns from the dataset.")
+st.subheader("**_NOTE:_**")
+st.text("- Since there are some columns which are highly correlated with the target variable, we decided not to remove these columns from the dataset.")
 
 # sales analysis 
-
+st.text("")
+st.text("")
 sales_title = '<p style="font-family:Courier; font-weight: bold; color:Teal; font-size: 40px;">Sales Analysis</p>'
 st.markdown(sales_title, unsafe_allow_html=True)
 
@@ -161,8 +159,7 @@ st.markdown(sales_title, unsafe_allow_html=True)
 st.text("")
 st.text("")
 st.text("")
-st.header("Distplot which shows amount funded is equal to loan applied by Customer")
-st.text("")
+st.subheader("**_Distplot which shows amount funded is equal to loan applied by Customer-**")
 distplot = Image.open("distplot.png")
 st.image(distplot, width=1500)
 
@@ -171,8 +168,7 @@ st.image(distplot, width=1500)
 st.text("")
 st.text("")
 st.text("")
-st.header("Barplot which displays which year the most loans were issued")
-st.text("")
+st.subheader("**_Barplot which displays which year the most loans were issued_**")
 barplot = Image.open("barplot.png")
 st.image(barplot, width=800)
 
@@ -185,8 +181,7 @@ st.subheader("- We can now understand that the most number of loans were issued 
 st.text("")
 st.text("")
 st.text("")
-st.header("Countplot which shows Loan status type distribution")
-st.text("")
+st.subheader("**_Countplot which shows Loan status type distribution_**")
 countplot = Image.open("countplot.png")
 st.image(countplot, width=1500)
 
@@ -195,22 +190,22 @@ st.image(countplot, width=1500)
 st.text("")
 st.text("")
 st.text("")
-st.header("Countplot which shows what are the major Client Purposes for Loan Credit")
-st.text("")
+st.subheader("**_Countplot which shows what are the major Client Purposes for Loan Credit_**")
 countplot1 = Image.open("countplot1.png")
 st.image(countplot1, width=1500)
 
 st.text("")
 st.text("")
-st.header("The top 3 purposes are:")
-st.text("")
+st.subheader("**_The top 3 purposes are:_")
 st.text("56.5% of the Loans are to Debt Consolidation")
 st.text("22.87% are to pay Credit Card")
 st.text("6.67% are to buy a Home")
 
 
 # credit risk analysis 
-
+st.text("")
+st.text("")
+st.text("")
 credit_title = '<p style="font-family:Courier; font-weight: bold; color:Teal; font-size: 40px;">Credit and Risk Analysis</p>'
 st.markdown(credit_title, unsafe_allow_html=True)
 
@@ -219,8 +214,7 @@ st.markdown(credit_title, unsafe_allow_html=True)
 st.text("")
 st.text("")
 st.text("")
-st.header("Crosstab to display Loan status by Grade ")
-st.text("")
+st.subheader("**_Crosstab to display Loan status by Grade_**")
 crosstab = Image.open("crosstab.png")
 st.image(crosstab, width=1500)
 
@@ -230,8 +224,7 @@ st.image(crosstab, width=1500)
 st.text("")
 st.text("")
 st.text("")
-st.header("Bar plot and Pie chart which shows percentage of good and bad loans.")
-st.text("")
+st.subheader("**_Bar plot and Pie chart which shows percentage of good and bad loans**_")
 piechart = Image.open("piechart.png")
 st.image(piechart, width=1500)
 
@@ -242,17 +235,16 @@ st.image(piechart, width=1500)
 st.text("")
 st.text("")
 st.text("")
-st.header("Amount of Loans issued by Region.")
-st.text("")
+st.subheader("**_Amount of Loans issued by Region_**")
 map = Image.open("map.png")
 st.image(map, width=1500)
 
 
-st.header("Important Information:")
+st.subheader("**_Important Information:_**")
 st.text("")
-st.subheader("-The regions of the West and SouthEast had a higher percentage in most of the BAD loan statuses.")
-st.subheader("-Based on this small and brief summary we can conclude that the West and SouthEast regions have the most undesirable loan status, but just by a slightly higher percentage compared to the NorthEast region.")
-st.subheader("-Again, this does not tell us what causes a loan to be a bad loan , but it gives us some idea about the level of risk within the regions across the United States.")
+st.text("- The regions of the West and SouthEast had a higher percentage in most of the BAD loan statuses.")
+st.text("- Based on this small and brief summary we can conclude that the West and SouthEast regions have the most undesirable loan status, but just by a slightly higher percentage compared to the NorthEast region.")
+st.text("- Again, this does not tell us what causes a loan to be a bad loan , but it gives us some idea about the level of risk within the regions across the United States.")
 st.text("")
 st.text("")
 
@@ -262,15 +254,16 @@ st.text("")
 st.text("")
 st.text("")
 st.text("")
-st.header("Type of loans by grade and subgrade.")
-st.text("")
+st.subheader("**_Type of loans by grade and subgrade_**")
 barplot2 = Image.open("barplot2.png")
 st.image(barplot2, width=1000)
 
 
 
 # ops team analysis 
-
+st.text("")
+st.text("")
+st.text("")
 ops_title = '<p style="font-family:Courier; font-weight: bold; color:Teal; font-size: 40px;">Operations Analysis</p>'
 st.markdown(ops_title, unsafe_allow_html=True)
 st.text("")
