@@ -149,15 +149,13 @@ heatmapcor = Image.open("heatmapcor.png")
 st.image(heatmapcor, width=1000)
 
 """
-**_NOTE_**
+**_NOTE:_**
 - Since there are some columns which are highly correlated with the target variable, we decided not to remove these columns from the dataset.
 
 """
 
 # sales analysis 
 
-st.text("")
-st.text("")
 st.text("")
 st.text("")
 st.text("")
@@ -196,11 +194,6 @@ st.subheader("**_Barplot which displays which year the most loans were issued_**
 barplot = Image.open("barplot.png")
 st.image(barplot, width=800)
 st.text("")
-
-"""
-**_Information:_**
-- We can now understand that the most number of loans were issued in the year 2015 compared to all other years and the trend shows that we are increasing in business year by year with more number of Customers.
-"""
 
 # countplot which shows Loan status type distribution
 
@@ -241,6 +234,21 @@ st.text("")
 st.text("")
 credit_title = '<p style="font-family:Courier; font-weight: bold; color:Teal; font-size: 40px;">Credit and Risk Analysis</p>'
 st.markdown(credit_title, unsafe_allow_html=True)
+
+'''
+**_A Deeper Look into Bad Loans:_**
+
+What we need to know: The number of loans that were classified as bad loans for each region by its loan status. (This will be shown in a dataframe below.) This won't give us the exact reasons why a loan is categorized as a bad loan (other variables that might have influence the condition of the loan) but it will give us a deeper insight on the level of risk in a particular region.
+
+**_Summary:_**
+
+- The regions of the West and SouthEast had a higher percentage in most of the b "bad" loan statuses.
+- The NorthEast region had a higher percentage in Grace Period and Does not meet Credit Policy loan status. However, both of these are not considered as bad as default for instance. 
+- Based on this small and brief summary we can conclude that the West and SouthEast regions have the most undesirable loan status, but just by a slightly higher percentage compared to the NorthEast region.
+- Again, this does not tell us what causes a loan to be a bad loan , but it gives us some idea about the level of risk within the regions across the United States.
+
+'''
+
 
 # crosstab to display Loan status by Grade 
 
@@ -299,9 +307,36 @@ st.text("")
 st.text("")
 st.text("")
 st.text("")
-ops_title = '<p style="font-family:Courier; font-weight: bold; color:Teal; font-size: 40px;">Operations Analysis</p>'
+ops_title = '<p style="font-family:Courier; font-weight: bold; color:Teal; font-size: 40px;">Operations Analysis (Business Perspective)</p>'
 st.markdown(ops_title, unsafe_allow_html=True)
 st.text("")
+
+'''
+**_Summary:**_
+
+- Below visualization will help the operational team to understand which audience has to be targeted in order to increase revenue.
+- We can see that there are approximately 45% unverified customers. We can verify their source of income which in turn will be helpful for future business purposes.
+- Top Experience employees plot describes the experience of employees which tells us that there are many eligible customers who can drive more business to our company.
+- We can target the mid range experienced employees who will be the best revenue generators to our company as they will still work in the organization for a long time.
+'''
+
+# verified status
+
+st.text("")
+st.text("")
+st.text("")
+st.subheader("**_Loan verification status types distribution to see_**")
+barplot33 = Image.open("barplot33.png")
+st.image(barplot33, width=1500)
+
+# top experience employees
+
+st.text("")
+st.text("")
+st.text("")
+st.subheader("**_Employment Experience in total years_**")
+barplot44 = Image.open("exp-emp.png")
+st.image(barplot44, width=1500)
 
 
 
