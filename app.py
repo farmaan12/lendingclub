@@ -59,9 +59,9 @@ st.markdown("""
 
 
 st.markdown('''
-# **Data Analysis using Python**
+# **Overview**
 
-Company Information:
+**Company Information:**
 
 Lending Club is a peer to peer lending company based in the United States, in which investors provide funds for potential borrowers and investors earn a profit depending on the risk they take (the borrowers credit score). Lending Club provides the "bridge" between investors and borrowers. For more basic information about the company please check out the wikipedia article about the company.
 
@@ -78,7 +78,7 @@ st.balloons()
 
 #loading data
 
-st.subheader('General information and Preview of dataset which is cleaned and processed:')
+st.subheader('**_General information and Preview of dataset which is cleaned and processed:_**')
 df = pd.read_csv("pre_processed_data.csv", low_memory=False)
 st.write(df)  # visualize my dataframe in the Streamlit app
 
@@ -129,7 +129,7 @@ st.text("- Below we can see a visual representation to see how the data is fille
 st.text("")
 st.text("")
 st.text("")
-st.markdown("Heatmap which represents number of null columns before and after cleaning the data")
+st.markdown("**_Heatmap which represents number of null columns before and after cleaning the data_**")
 st.text("")
 heatmap = Image.open("heatmap.png")
 heatmap1 = Image.open("heatmap1.png")
@@ -141,14 +141,19 @@ st.image([heatmap,heatmap1])
 st.text("")
 st.text("")
 st.text("")
-st.header("Heatmap which represents co-relation in the data.")
+st.header("**_Heatmap which represents co-relation in the data._**")
 st.text("")
 heatmapcor = Image.open("heatmapcor.png")
-st.image(heatmapcor, width=1500)
+st.image(heatmapcor, width=1000)
 
-st.header("Important Information:")
+st.header("**_NOTE:_**")
 st.text("")
 st.subheader("- Since there are some columns which are highly correlated with the target variable, we decided not to remove these columns from the dataset.")
+
+# sales analysis 
+
+sales_title = '<p style="font-family:Courier; font-weight: bold; color:Teal; font-size: 40px;">Sales Analysis</p>'
+st.markdown(sales_title, unsafe_allow_html=True)
 
 
 # distplot which shows amount funded is equal to loan applied by customer.
@@ -203,6 +208,12 @@ st.text("56.5% of the Loans are to Debt Consolidation")
 st.text("22.87% are to pay Credit Card")
 st.text("6.67% are to buy a Home")
 
+
+# credit risk analysis 
+
+credit_title = '<p style="font-family:Courier; font-weight: bold; color:Teal; font-size: 40px;">Credit and Risk Analysis</p>'
+st.markdown(credit_title, unsafe_allow_html=True)
+
 # crosstab to display Loan status by Grade 
 
 st.text("")
@@ -255,6 +266,15 @@ st.header("Type of loans by grade and subgrade.")
 st.text("")
 barplot2 = Image.open("barplot2.png")
 st.image(barplot2, width=1000)
+
+
+
+# ops team analysis 
+
+ops_title = '<p style="font-family:Courier; font-weight: bold; color:Teal; font-size: 40px;">Operations Analysis</p>'
+st.markdown(ops_title, unsafe_allow_html=True)
+st.text("")
+
 
 
 # footer
