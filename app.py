@@ -11,8 +11,21 @@ import os
 import streamlit.components.v1 as components
 from PIL import Image
 import time
+from multiapp import MultiApp
+from apps import sales,credit,ops # import your app modules here
 
 
+
+# multi page app
+app = MultiApp()
+
+# Add all your application here
+app.add_app("Home", home.app)
+app.add_app("Data", data.app)
+app.add_app("Model", model.app)
+
+# The main app
+app.run()
 
 # web app title
 st.set_page_config(page_title="Lending Club", page_icon="🤖", layout="wide")
